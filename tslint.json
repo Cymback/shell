@@ -1,0 +1,26 @@
+{
+    "extends": [
+      "tslint:recommended"
+    ],
+  "rules": {
+    "no-else-return": "error",
+    "no-multi-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "camelcase": "error",
+    "new-cap": "error",
+    "no-console": false,
+    "comma-dangle": "error",
+    "no-var": "error",
+    "indent": [false, 4],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
+
+
