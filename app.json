@@ -1,7 +1,9 @@
 {
   "expo": {
     "name": "shell",
+    "owner": "Shell",
     "slug": "shell",
+    "privacy": "public",
     "platforms": [
       "ios",
       "android",
