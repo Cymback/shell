@@ -16,7 +16,11 @@ export default function App() {
             plat4muserid: 'sac.steen.amelungs',
             signin: '1',
           })
-    });
+    }).then(response => response.json())
+        .then(data => {
+          console.log('Succes' + data);
+        }).catch((error) => console.error('Error', error)
+    );
   }
 
   function pushDeclined() {
@@ -32,6 +36,11 @@ export default function App() {
             plat4muserid: 'sac.steen.amelungs',
             signin: '2',
           })
+    }).then(response => response.json())
+        .then(data => {
+          console.log('Succes' + data);
+        }).catch((error) => {
+      console.error('Error:', error);
     });
   }
 
