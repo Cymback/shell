@@ -1,7 +1,11 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import * as React from 'react';
+import React, {useEffect} from 'react';
+import {getPushNotificationPermissions} from './functions/Permissions';
 
 export default function App() {
+  useEffect(() => {
+    getPushNotificationPermissions(); // Ask for push permission on startup app, can be changed
+  });
 
   function pushApproved() {
     console.log('Approved Login message');
@@ -18,7 +22,7 @@ export default function App() {
           })
     }).then(response => response.json())
         .then(data => {
-          console.log('Succes' + data);
+          console.log('Success' + data);
         }).catch((error) => console.error('Error', error)
     );
   }
@@ -38,7 +42,7 @@ export default function App() {
           })
     }).then(response => response.json())
         .then(data => {
-          console.log('Succes' + data);
+          console.log('Success' + data);
         }).catch((error) => {
       console.error('Error:', error);
     });

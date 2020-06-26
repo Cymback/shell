@@ -13,6 +13,7 @@
     "noImplicitThis": false,
     "types": [
       "jest"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   }
 }
